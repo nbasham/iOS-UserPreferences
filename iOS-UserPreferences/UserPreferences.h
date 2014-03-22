@@ -1,11 +1,3 @@
-//
-//  UserPreferences.h
-//  iOS-UserPreferences
-//
-//  Created by Norman Basham iMac on 3/21/14.
-//  Copyright (c) 2014 isolace. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 @interface UserPreferences : NSObject

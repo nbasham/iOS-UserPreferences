@@ -1,11 +1,3 @@
-//
-//  UserPreferences.m
-//  iOS-UserPreferences
-//
-//  Created by Norman Basham iMac on 3/21/14.
-//  Copyright (c) 2014 isolace. All rights reserved.
-//
-
 #import "UserPreferences.h"
 
 @implementation UserPreferences
@@ -43,14 +35,14 @@
 }
 
 +(int)getIntWithKey:(NSString*)key {
-    return [[NSUserDefaults standardUserDefaults] integerForKey:key];
+    return (int)[[NSUserDefaults standardUserDefaults] integerForKey:key];
 }
 
 +(int)getIntWithKey:(NSString*)key withDefault:(int)d {
 	if([[NSUserDefaults standardUserDefaults] objectForKey:key] == nil) {
 		return d;
 	}
-    return [[NSUserDefaults standardUserDefaults] integerForKey:key];
+    return (int)[[NSUserDefaults standardUserDefaults] integerForKey:key];
 }
 
 +(void)setInt:(int)v withKey:(NSString*)key {
